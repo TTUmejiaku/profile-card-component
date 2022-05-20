@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+===============
+variables
+===============
+*/
+:root {
+  /**** primary colors ****/
+  --dark-cyan: hsl(185, 75%, 39%);
+  --vdk-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /**** neutral colors ****/
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /**** fonts ****/
+  --ff: "Kumbh Sans", sans-serif;
+  --fs: 18px;
+}
+
+/*
+===============
+global elements
+===============
+*/
+body {
+  min-height: 100vh;
+  background: url(./images/bg-pattern-top.svg) top -350px left -100px no-repeat,
+    url(./images/bg-pattern-bottom.svg) bottom -300px right -100px no-repeat;
+  background-color: var(--dark-cyan);
+  background-size: 50%, 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff);
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  color: var(--vdk-desaturated-blue);
+}
+
+/*
+===============
+global classes
+===============
+*/
+.card {
+  min-width: 345px;
+  background: white;
+  border-radius: 0.8rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 5px 5px 15px 4px rgba(53, 156, 153, 0.74);
+  box-shadow: 2px 3px 15px 4px rgba(78, 190, 218, 0.623);
+}
+
+.img-header {
+  width: 100%;
+  height: 150px;
+  background: url(./images/bg-pattern-card.svg);
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.profile {
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+}
+
+.profile img {
+  position: absolute;
+  top: 100px;
+  left: 35%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.profile > h1 {
+  margin-bottom: 0.8rem;
+  color: var(--vdk-desaturated-blue);
+}
+
+.profile span {
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.profile > p {
+  margin-bottom: 1.5rem;
+  color: var(--dark-grayish-blue);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stats h3 {
+  color: var(--vdk-desaturated-blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stats p {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: var(--dark-grayish-blue);
+  margin-top: 0.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
